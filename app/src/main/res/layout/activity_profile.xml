@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/shop"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/shopingcart"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            >
+        </ImageView>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/searchicon"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp">
+        </ImageView>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:id="@+id/r1b"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/tool"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bgradius">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/cimg"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/amull"
+            app:civ_border_color="#F1A252"
+            app:civ_border_overlay="true">
+
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/stabd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/cimg"
+            android:text="Standard User"
+            android:textColor="#1C67B1"
+            android:textSize="15sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/stabd"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/cimg"
+            android:text="8929719319"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@id/r1b"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+          >
+
+            <ImageView
+                android:id="@+id/home"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15sp"
+                android:src="@drawable/home_icon">
+
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/thome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/home"
+                android:layout_marginTop="20dp"
+                android:text="Home"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                >
+            </TextView>
+
+            <ImageView
+                android:id="@+id/cart"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/home"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15sp"
+                android:src="@drawable/shopingcart">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/tcat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/home"
+                android:layout_marginTop="20dp"
+                android:text="Cart"
+                android:layout_below="@id/thome"
+                android:textColor="@color/black"
+                android:textSize="15sp">
+            </TextView>
+
+            <ImageView
+                android:id="@+id/notifi"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/cart"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15sp"
+                android:src="@drawable/noti">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/txtnoti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/home"
+                android:layout_marginTop="20dp"
+                android:text="Notification"
+                android:layout_below="@id/cart"
+                android:textColor="@color/black"
+                android:textSize="15sp">
+            </TextView>
+
+            <ImageView
+                android:id="@+id/order"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/notifi"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15sp"
+                android:src="@drawable/order">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/orderr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/home"
+                android:layout_marginTop="20dp"
+                android:text="Your order"
+                android:layout_below="@id/txtnoti"
+                android:textColor="@color/black"
+                android:textSize="15sp">
+            </TextView>
+
+            <ImageView
+                android:id="@+id/hist"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/order"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="15sp"
+                android:src="@drawable/his">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/txthis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/home"
+                android:layout_marginTop="20dp"
+                android:text="Transaction History"
+                android:layout_below="@id/orderr"
+                android:textColor="@color/black"
+                android:textSize="15sp">
+            </TextView>
+            <ImageView
+                android:id="@+id/pass"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/hist"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="15sp"
+                android:src="@drawable/pass">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/cpass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/home"
+                android:layout_marginTop="20dp"
+                android:text="change password"
+                android:layout_below="@id/txthis"
+                android:textColor="@color/black"
+                android:textSize="15sp">
+            </TextView>
+
+            <ImageView
+                android:id="@+id/add"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/pass"
+                android:layout_marginTop="23dp"
+                android:layout_marginLeft="15sp"
+                android:src="@drawable/addr">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/addres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/home"
+                android:layout_marginTop="20dp"
+                android:text="Manage Address"
+                android:layout_below="@id/cpass"
+                android:textColor="@color/black"
+                android:textSize="15sp">
+            </TextView>
+            <ImageView
+                android:id="@+id/con"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/add"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="15sp"
+                android:src="@drawable/contact">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/cont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/home"
+                android:layout_marginTop="20dp"
+                android:text="Conts us"
+                android:layout_below="@id/addres"
+                android:textColor="@color/black"
+                android:textSize="15sp">
+            </TextView>
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

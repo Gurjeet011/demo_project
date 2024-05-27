@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/caard"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_height="200dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/outline">
+
+
+            <ImageView
+                android:id="@+id/milkimg"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:padding="30dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/amull">
+            </ImageView>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/caard"
+        >
+   <ImageView
+       android:id="@+id/heartimg"
+       android:layout_width="25dp"
+       android:layout_height="25dp"
+       android:src="@drawable/heartgagan"
+       android:layout_marginTop="10dp"
+       android:layout_marginLeft="10dp">
+   </ImageView>
+
+        <TextView
+            android:id="@+id/whislist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wish List"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:layout_toRightOf="@id/heartimg"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp">
+        </TextView>
+    <TextView
+        android:id="@+id/share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        android:textSize="12sp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/black">
+    </TextView>
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/share"
+        android:layout_toLeftOf="@id/share"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        >
+    </ImageView>
+     <TextView
+         android:id="@+id/milk"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/heartimg"
+         android:layout_marginTop="10dp"
+         android:layout_marginLeft="10dp"
+         android:textColor="@color/black"
+         android:textSize="12sp"
+         android:textStyle="bold"
+         android:text="Amull Toned Tazzaa Fresh milk">
+     </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/share"
+            android:layout_alignParentEnd="true"
+            android:text="500gm"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/black">
+        </TextView>
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="price 40"
+            android:layout_below="@id/milk"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Quantity"
+            android:layout_below="@id/price"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp">
+        </TextView>
+
+       <TextView
+           android:id="@+id/cart"
+           android:layout_width="90dp"
+           android:layout_height="40dp"
+           android:text="Add TO Cart"
+           android:textSize="10sp"
+           android:layout_toRightOf="@id/quantity"
+           android:layout_below="@id/price"
+           android:layout_marginLeft="70dp"
+           android:textColor="@color/white"
+           android:background="@drawable/bgradius"
+          android:gravity="center">
+
+       </TextView>
+
+       <View
+           android:id="@+id/view"
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:background="#C1C8CF"
+           android:layout_below="@id/cart"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:layout_marginTop="10dp">
+       </View>
+
+        <ImageView
+            android:id="@+id/fassai"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:src="@drawable/fassai"
+            android:layout_below="@id/view"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            >
+
+        </ImageView>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="License NO.662552468648"
+          android:layout_toRightOf="@id/fassai"
+          android:layout_below="@id/view"
+          android:textSize="12sp"
+          android:layout_marginTop="13dp"
+          android:layout_marginLeft="20dp"
+          >
+
+      </TextView>
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#C1C8CF"
+            android:layout_below="@id/fassai"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
+        </View>
+        <TextView
+            android:id="@+id/item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="About this items"
+            android:textStyle="bold"
+            android:layout_below="@id/view2"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/frsh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Fresh"
+            android:textSize="10sp"
+
+            android:textStyle="bold"
+            android:layout_below="@id/item"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp">
+        </TextView>
+        <TextView
+            android:id="@+id/ripe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Ripe"
+            android:textSize="10sp"
+
+            android:textStyle="bold"
+            android:layout_below="@id/frsh"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp">
+        </TextView> <TextView
+        android:id="@+id/Uncut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Uncut"
+        android:textSize="10sp"
+
+        android:textStyle="bold"
+        android:layout_below="@id/ripe"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp">
+    </TextView> <TextView
+        android:id="@+id/Healty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Healthy"
+        android:textSize="10sp"
+
+        android:textStyle="bold"
+        android:layout_below="@id/Uncut"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp">
+    </TextView> <TextView
+        android:id="@+id/tasty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Tasty"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:layout_below="@id/Healty"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp">
+
+
+    </TextView>
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#C1C8CF"
+            android:layout_below="@id/tasty"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
+        </View>
+
+        <TextView
+            android:id="@+id/write"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/view3"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bgradius"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="WRITE A REVIEW"
+            android:textColor="@color/white"
+            android:textSize="10sp">
+
+        </TextView>
+        <TextView
+            android:id="@+id/gotocart"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Go To Cart"
+            android:textSize="12sp"
+            android:layout_margin="10dp"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/white"
+            android:background="#ED0C0C"
+            android:gravity="center">
+
+        </TextView>
+
+    </RelativeLayout>
+</RelativeLayout>

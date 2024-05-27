@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/relateclick"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#5BDCEA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Evara"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="cursive"
+            android:textSize="25sp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            app:tint="@color/white"
+            android:src="@drawable/shopingcart">
+
+        </ImageView>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp"
+            app:tint="@color/white"
+
+            android:src="@drawable/heartgagan">
+
+        </ImageView>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right"
+            app:tint="@color/white"
+
+            android:layout_marginRight="15dp"
+            android:src="@drawable/searchgagan">
+
+        </ImageView>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/toolbar"
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rr1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            tools:ignore="NotSibling">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <com.smarteist.autoimageslider.SliderView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/rr1"
+            app:sliderStartAutoCycle="true"
+            app:sliderIndicatorEnabled="true"
+            android:id="@+id/sliderview"
+            />
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sliderview"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:text="Beautiful Flowers"
+            android:textColor="#5BDCEA"
+            android:textSize="15sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sliderview"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:background="@drawable/background"
+            android:text="VIEW ALL"
+            android:textColor="@color/white"
+            android:textSize="10sp">
+        </TextView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/r2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt1"
+            >
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+
+        <TextView
+            android:id="@+id/txt10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/r2"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:text="Perfect Combos"
+            android:textColor="#5BDCEA"
+            android:textSize="15sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/r2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:background="@drawable/background"
+            android:text="VIEW ALL"
+            android:textColor="@color/white"
+            android:textSize="10sp">
+        </TextView>
+
+         <androidx.recyclerview.widget.RecyclerView
+             android:id="@+id/r3"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/txt10"
+             >
+         </androidx.recyclerview.widget.RecyclerView>
+        <TextView
+            android:id="@+id/txt101"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/r3"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:text="chocolates"
+            android:textColor="#5BDCEA"
+            android:textSize="15sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/r3"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:background="@drawable/background"
+            android:text="VIEW ALL"
+            android:textColor="@color/white"
+            android:textSize="10sp">
+        </TextView>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/r4"
+            android:layout_below="@id/txt101"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="?actionBarSize"
+
+            >
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+
+
+
+
+
+</androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        app:menu="@menu/bottam"
+        app:labelVisibilityMode="labeled"
+
+        app:itemIconTint="#5BDCEA"
+        app:itemTextColor="#5BDCEA"
+        android:layout_alignParentStart="true">
+
+
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>
+

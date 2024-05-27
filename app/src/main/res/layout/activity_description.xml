@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Description">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#5BDCEA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Evara"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="cursive"
+            android:textSize="25sp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            app:tint="@color/white"
+            android:src="@drawable/shopingcart">
+
+        </ImageView>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp"
+            app:tint="@color/white"
+
+            android:src="@drawable/heartgagan">
+
+        </ImageView>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right"
+            app:tint="@color/white"
+
+            android:layout_marginRight="15dp"
+            android:src="@drawable/searchgagan">
+
+        </ImageView>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.smarteist.autoimageslider.SliderView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:sliderStartAutoCycle="true"
+                app:sliderIndicatorEnabled="true"
+                android:id="@+id/slidervieww">
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <ImageView
+                android:id="@+id/heartIcon1"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="top|end"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/heartradius"
+                android:clickable="true"
+                android:onClick="onHeartIconClick"
+                android:padding="3dp"
+                android:src="@drawable/heartgagan"
+                android:tint="@color/black"
+                tools:ignore="UseAppTint">
+
+            </ImageView>
+            <ImageView
+                android:id="@+id/share"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="10dp"
+                android:layout_below="@id/heartIcon1"
+                android:layout_gravity="top|end"
+                android:background="@drawable/heartradius"
+                android:clickable="true"
+                android:onClick="onHeartIconClick"
+                android:padding="3dp"
+                android:src="@drawable/share"
+                android:tint="@color/black"
+                tools:ignore="UseAppTint">
+
+            </ImageView>
+            </com.smarteist.autoimageslider.SliderView>
+
+
+            <TextView
+                android:id="@+id/modern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/slidervieww"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Modern Romance"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"></TextView>
+            <TextView
+                android:id="@+id/Rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.1 *"
+                android:paddingVertical="3dp"
+                android:paddingHorizontal="5dp"
+                android:background="@drawable/greenbackground"
+                android:textColor="@color/white"
+                android:layout_below="@id/modern"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textSize="15sp">
+            </TextView>
+            <TextView
+                android:id="@+id/review"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rating Reviews *"
+                android:layout_below="@id/modern"
+                android:layout_toRightOf="@id/Rating"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textSize="15sp">
+            </TextView>
+            <TextView
+                android:id="@+id/oriprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="499"
+                android:layout_below="@id/Rating"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="35sp">
+            </TextView>
+            <TextView
+                android:id="@+id/cutprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="599"
+                android:layout_below="@id/Rating"
+                android:layout_toRightOf="@id/oriprice"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textSize="12sp">
+            </TextView>
+            <TextView
+                android:id="@+id/taxes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="inclusive of all taxes"
+                android:layout_below="@id/cutprice"
+                android:layout_toRightOf="@id/oriprice"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textSize="12sp">
+            </TextView>
+
+            <EditText
+                android:id="@+id/edt"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_below="@id/oriprice"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/outline"
+                android:textSize="10sp"
+
+                android:hint="Enter pincode to check Delivery"
+                android:drawableStart="@drawable/ic_baseline_location_on_24">
+            </EditText>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bgradius"
+                android:layout_alignBottom="@id/edt"
+                android:layout_alignEnd="@id/edt"
+                android:layout_alignTop="@id/edt"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:text="Check"/>
+            <TextView
+                android:id="@+id/pd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product Description :"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_below="@id/edt"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp">
+            </TextView>
+
+
+
+
+
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

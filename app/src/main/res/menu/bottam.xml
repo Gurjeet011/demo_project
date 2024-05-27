@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="home"
+        android:id="@+id/home"
+        app:itemIconTint="#5BDCEA"
+        app:itemTextColor="@color/black"
+        android:icon="@drawable/home_icon" />
+    <item android:title="category"
+        android:id="@+id/category"
+        app:itemIconTint="#5BDCEA"
+        app:itemTextColor="@color/black"
+        android:icon="@drawable/cateee" />
+    <item android:title="Myorder"
+        android:id="@+id/Myorder"
+        app:itemIconTint="#5BDCEA"
+        app:itemTextColor="@color/black"
+        android:icon="@drawable/shopingcart" />
+    <item android:title="help"
+        android:id="@+id/help"
+        app:itemIconTint="#5BDCEA"
+        app:itemTextColor="@color/black"
+        android:icon="@drawable/helpicon" />
+    <item android:title="Profile"
+        android:id="@+id/Profile"
+        app:itemIconTint="#5BDCEA"
+        app:itemTextColor="@color/black"
+        android:icon="@drawable/searchicon" />
+</menu>
